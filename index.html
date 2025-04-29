@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 테트리스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <h1>웹 테트리스</h1>
+            <div class="score-container">
+                <p>점수: <span id="score">0</span></p>
+                <p>레벨: <span id="level">1</span></p>
+                <p>라인: <span id="lines">0</span></p>
+            </div>
+            <div class="next-piece-container">
+                <p>다음 블록:</p>
+                <canvas id="nextPiece" width="100" height="100"></canvas>
+            </div>
+            <div class="controls">
+                <p>조작 방법:</p>
+                <ul>
+                    <li>← → : 이동</li>
+                    <li>↑ : 회전</li>
+                    <li>↓ : 소프트 드롭</li>
+                    <li>스페이스바 : 하드 드롭</li>
+                    <li>P : 일시정지</li>
+                </ul>
+            </div>
+            <button id="startBtn">게임 시작</button>
+            <button id="restartBtn" style="display: none;">재시작</button>
+        </div>
+        <div class="game-container">
+            <canvas id="tetris" width="300" height="600"></canvas>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
