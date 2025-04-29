@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.game-info {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.score-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.score-container p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.next-piece-container {
+    margin-bottom: 20px;
+}
+
+.next-piece-container p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.controls ul {
+    list-style-type: none;
+}
+
+.controls li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+canvas {
+    background-color: #202028;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .game-container canvas {
+        width: 100%;
+        height: auto;
+    }
+}
